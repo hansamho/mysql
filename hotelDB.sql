@@ -35,10 +35,13 @@ CREATE TABLE IF NOT EXISTS `hotel`.`member` (
   `birthday` VARCHAR(45) NULL COMMENT '생일',
   `memberID` VARCHAR(45) NULL COMMENT '아이디',
   `memberPassword` VARCHAR(45) NULL COMMENT '비밀번호',
-  `MemberPhone` VARCHAR(45) NULL COMMENT '전화번호',
+  `memberPhone` VARCHAR(45) NULL COMMENT '전화번호',
   `codeNumber` VARCHAR(45) NULL COMMENT '우편번호',
   `roadName` VARCHAR(45) NULL COMMENT '도로명',
   `addrDetail` VARCHAR(45) NULL COMMENT '상세정보',
+  `mbRegDate` DATETIME NULL,
+  `mbUpdate` DATETIME NULL,
+  `mbDelny` TINYINT NULL,
   PRIMARY KEY (`memberSeq`))
 ENGINE = InnoDB
 COMMENT = '회원테이블';
